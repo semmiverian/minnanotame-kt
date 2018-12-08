@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgKesta"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+
+
+    <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"
+            android:layout_marginBottom="90dp"
+    />
+
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:text="第22課"
+            android:textColor="@color/bgKesta"
+            android:textSize="24sp"
+            android:id="@+id/duadua"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+    />
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/duadua"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:text="第23課"
+            android:textColor="@color/bgKesta"
+            android:textSize="24sp"
+            android:id="@+id/duatiga"
+            android:layout_marginTop="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+    />
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/duatiga"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:text="第24課"
+            android:textColor="@color/bgKesta"
+            android:textSize="24sp"
+            android:id="@+id/duaempat"
+            android:layout_marginTop="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+    />
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/duaempat"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:text="第25課"
+            android:textColor="@color/bgKesta"
+            android:textSize="24sp"
+            android:id="@+id/dualima"
+            android:layout_marginTop="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+    />
+
+</RelativeLayout>

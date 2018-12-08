@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Minna no tame</string>
+    <string name="title_activity_detail_lectuer">DetailLectuer</string>
+    <string name="title_activity_kosakata">Kosakata</string>
+</resources>
