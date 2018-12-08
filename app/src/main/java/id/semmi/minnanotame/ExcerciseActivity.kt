@@ -3,6 +3,7 @@ package id.semmi.minnanotame
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_excercise.*
 
 class ExcerciseActivity : AppCompatActivity() {
@@ -24,7 +25,17 @@ class ExcerciseActivity : AppCompatActivity() {
         )
 
 
-        excerciseAdapter = ExcerciseAdapter(this, excercises)
+        excerciseAdapter = ExcerciseAdapter(this, excercises) { inputedText: String, selectedIndex: Int ->
+            val newExercise = excercises.mapIndexed { index, excercise ->
+                if (index == selectedIndex) {
+                     Excercise(excercise.soal, inputedText)
+                } else {
+                    excercise
+                }
+            }
+
+            Log.d("coba", newExercise.toString())
+        }
 
         excercise_recycler_view.adapter = excerciseAdapter
         excercise_recycler_view.layoutManager =  LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

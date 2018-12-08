@@ -18,6 +18,9 @@ class KosakataActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val kosakataList: List<Kosakata> = listOf(
+            Kosakata("", "よく", "Seringkali"),
+            Kosakata("きます", "着ます", "Memakai (untuk benda yang dikenakan di pinggang ke atas"),
+            Kosakata("はきます", "履きます", "Memakai (untuk benda yang dikenakan di pinggang ke bawah") ,
             Kosakata("めがね", "眼鏡", "Kacamata"),
             Kosakata("", "コート", "Mantel jas"),
             Kosakata("", "ジーンズ", "Celana Jeans")
