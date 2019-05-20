@@ -6,24 +6,21 @@
                 android:paddingEnd="10dp"
                 android:layout_height="wrap_content">
 
-    <android.support.v7.widget.AppCompatTextView android:layout_width="match_parent"
-                                                 android:layout_height="wrap_content"
-                                                 android:id="@+id/title"
+    <android.support.v7.widget.AppCompatImageView android:layout_width="match_parent"
+                                                 android:layout_height="100dp"
+                                                 android:id="@+id/image"
                                                  android:paddingTop="10dp"
                                                  android:paddingBottom="10dp"
                                                  android:text="あれはキモさんが作った映画です"
                                                  android:textAlignment="center"
                                                  android:layout_marginTop="10dp"
-                                                 android:textSize="18sp"
-                                                 android:background="@color/white"
-                                                 android:textColor="@color/bgKesta"
 
     />
 
     <android.support.v7.widget.AppCompatTextView android:layout_width="match_parent"
                                                  android:layout_height="wrap_content"
                                                  android:id="@+id/detail"
-                                                 android:layout_below="@+id/title"
+                                                 android:layout_below="@+id/image"
                                                  android:text="Itu film yang dibuat Kimo"
                                                  android:textAlignment="center"
                                                  android:layout_marginTop="10dp"

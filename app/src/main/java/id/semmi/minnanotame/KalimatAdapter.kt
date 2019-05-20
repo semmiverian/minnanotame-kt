@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.kalimat.view.*
 
 class KalimatAdapter(val context: Context, val listKalimat: List<Kalimat>) : RecyclerView.Adapter<KalimatAdapter.ViewHolder>() {
@@ -26,7 +27,11 @@ class KalimatAdapter(val context: Context, val listKalimat: List<Kalimat>) : Rec
 
     class ViewHolder(itemView: View?): RecyclerView.ViewHolder(itemView) {
         fun bind(context: Context, materi: Kalimat) {
-            itemView?.title?.text = materi.title
+            Glide
+                .with(context)
+                .load(materi.image)
+                .into(itemView.image)
+
             itemView?.detail?.text = materi.description
         }
     }

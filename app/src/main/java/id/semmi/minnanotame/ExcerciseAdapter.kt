@@ -31,7 +31,7 @@ class ExcerciseAdapter(val context: Context, val excercises: List<Excercise>, va
             position: Int,
             listener: (String, Int) -> Unit
         ) {
-            itemView?.soal?.text = excercise.soal
+            itemView?.soal?.text = excercise.question
 
             itemView?.answer?.addTextChangedListener(object : TextWatcher {
                 override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {

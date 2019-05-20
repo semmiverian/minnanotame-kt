@@ -2,4 +2,5 @@
     <string name="app_name">Minna no tame</string>
     <string name="title_activity_detail_lectuer">DetailLectuer</string>
     <string name="title_activity_kosakata">Kosakata</string>
+    <string name="snackbar_success">Berhasil menginput latihan</string>
 </resources>

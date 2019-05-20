@@ -1,3 +1,3 @@
 package id.semmi.minnanotame
 
-data class Kalimat(val title: String, val description: String)
+data class Kalimat(val image: String, val description: String)

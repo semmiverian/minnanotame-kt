@@ -29,8 +29,8 @@ class KosakataAdapter(val context: Context, val listKosakata: List<Kosakata>) : 
 
         fun bind(context: Context, kosakata: Kosakata) {
             itemView?.sub1?.text = kosakata.sub1
-            itemView?.main?.text = kosakata.main
-            itemView?.sub2?.text = kosakata.translate
+            itemView?.main?.text = kosakata.title
+            itemView?.sub2?.text = kosakata.sub2
 
         }
 

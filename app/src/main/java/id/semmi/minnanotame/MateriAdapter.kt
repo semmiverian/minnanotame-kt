@@ -32,7 +32,7 @@ class MateriAdapter(val context: Context, val listMateri: List<Materi>) : Recycl
             itemView?.description?.text = materi.description
             itemView?.title?.text = materi.title
 
-            val kalimatAdapter = KalimatAdapter(context, materi.listKalimat)
+            val kalimatAdapter = KalimatAdapter(context, materi.kalimat)
 
             itemView?.kalimatRv?.adapter = kalimatAdapter
 
